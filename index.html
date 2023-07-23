@@ -47,6 +47,12 @@
       .latest-des{
         @apply text-[#6C6C6C] text-base font-normal leading-8
       }
+      .happy-client-name{
+        @apply text-[#23A6F0] text-sm font-semibold leading-6 tracking-[0.2px]
+      }
+      .profession{
+        @apply text-[#252B42] text-sm font-semibold leading-6 tracking-[.2px]
+      }
 
     </style>
   </head>
@@ -127,15 +133,63 @@
       
       <!-- happy client -->
       <section>
-        <h2 class="capitalize text-[#000] text-5xl font-semibold flex justify-center mt-24 gap-2 ">
+        <h2 class="capitalize text-[#000] md:text-5xl font-semibold flex justify-center mt-24 gap-2 text-3xl">
           Happy <span class="text-primary">  clients says</span>
         </h2>
         <!-- card container -->
-        <div>
-          <div>
-            <img src="" alt="">
-            <p></p>
+        <div class="flex justify-center items-center gap-10 mt-12 flex-col md:flex-row">
+          <div class="bg-white rounded-[1px] border-[#DEDEDE] inline-flex flex-col items-center py-10 px-9  shadow-md gap-7">
+            <div class="w-[149px] h-[149px] mb-7"><img src="images/others/user-1.png" alt=""></div>
+            <p class="latest-des">Slate helps you see how <br>
+              many more days you need <br> 
+              to work to reach your financial <br>
+              goal for the month and year.</p>
+            <div class="rating">
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            </div>
+            <p class="happy-client-name">Regina Miles</p>
+            <p class="profession">Banker</p>
           </div>
+          
+          <div class="bg-white rounded-[1px] border-[#DEDEDE] inline-flex flex-col items-center py-10 px-9  shadow-md gap-7">
+            <div class="w-[149px] h-[149px] mb-7"><img src="images/others/user-2.png" alt=""></div>
+            <p class="latest-des">Slate helps you see how <br>
+              many more days you need <br> 
+              to work to reach your financial <br>
+              goal for the month and year.</p>
+            <div class="rating">
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            </div>
+            <p class="happy-client-name">Regina Miles</p>
+            <p class="profession">Banker</p>
+          </div>
+          
+          <div class="bg-white rounded-[1px] border-[#DEDEDE] inline-flex flex-col items-center py-10 px-9  shadow-md gap-7">
+            <div class="w-[149px] h-[149px] mb-7"><img src="images/others/user-3.png" alt=""></div>
+            <p class="latest-des">Slate helps you see how <br>
+              many more days you need <br> 
+              to work to reach your financial <br>
+              goal for the month and year.</p>
+            <div class="rating">
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            </div>
+            <p class="happy-client-name">Regina Miles</p>
+            <p class="profession">Banker</p>
+          </div>
+          
+           
         </div>
       </section>
       <!-- FAQ -->
