@@ -34,10 +34,20 @@
         },
       };
     </script>
-    <style>
+    <style type="text/tailwindcss">
       .font-poppins {
         font-family: "Poppins", sans-serif;
       }
+      .btn{
+        @apply rounded-md bg-[#E76F51]  py-4 text-white  w-40 h-16
+      }
+      .latest-title{
+        @apply text-[#18191F] text-3xl font-semibold leading-10
+      }
+      .latest-des{
+        @apply text-[#6C6C6C] text-base font-normal leading-8
+      }
+
     </style>
   </head>
   <body class="font-poppins">
@@ -53,7 +63,7 @@
             <li class="text-[#000] text-base font-medium">News</li>
             <li class="text-[#000] text-base font-medium">Contact</li>
             <li>
-             <a href="#"> <button class="rounded-md bg-[#E76F51] px-12 py-4 text-white text-xl font-bold">Login</button></a>
+             <a href="#"> <button class="btn px-12 font-bold text-xl ">Login</button></a>
             </li>
           </ul>
         </div>
@@ -64,7 +74,7 @@
           <h1 class="black text-6xl font-bold leading-[75px]">Ride-on R15 V4 <br>with Smile</h1>
           <p class="para text-base font-light leading-6 mt-5 mb-7">Amet minim mollit non deserunt ullamco <br>
             est sit aliqua dolor do amet sint. Velit officia consequat <br> duis enim velit mollit.</p>
-          <button class="rounded-md bg-[#E76F51] px-12 py-4 text-white text-xl font-bold">Purchase</button>
+          <button class="btn font-semibold px-8 text-xl ">Purchase</button>
         </div>
         <div class="w-[406px] h-[343px]">
           <img src="images/slider/bike1.png" alt="" class="w-full ">
@@ -75,7 +85,7 @@
     <main>
       <!-- featured bike section -->
       <section class="mt-48">
-       <div class="flex flex-col justify-center items-center gap-4"> <h2 class="capitalize text-[#000] text-5xl font-semibold">featured bike in this year</h2>
+       <div class="flex flex-col justify-center items-center gap-4"> <h2 class="capitalize text-[#000] text-5xl font-semibold ">featured bike in this year</h2>
         <p class="text-primary text-sm font-semibold mb-12">Best bike collection</p></div>
         <div class="flex flex-col lg:flex-row justify-center items-center gap-36">
       <div class="w-[288px] h-[243px]"><img src="images/slider/bike3.png" alt=""class="w-full"></div>
@@ -84,9 +94,50 @@
         </div>
       </section>
       <!-- latest news -->
-      <section></section>
+      <h2 class="capitalize text-[#000] text-5xl font-semibold flex justify-center mt-24 ">Latest News</h2>
+     <div class="flex flex-col lg:flex-row justify-center items-center gap-5 mt-12">
+      <!-- first card -->
+      <div class="p-5 bg-white rounded-md shadow-md">
+        <div><img src="images/others/latest1.png" alt=""></div>
+        <div>
+         <h3 class="latest-title">Ducati XDIAVEL S-73</h3>
+         <p class="latest-des">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Lacus, fermentum amet <br> faucibus sed id nisi lectus at.</p>
+         <button  class="rounded-md border-2 border-primary  py-4 text-primary hover:text-white   w-40 h-16 bg-white hover:bg-primary ">Read More</button>
+        </div>
+      </div>
+      <!-- second card -->
+      <div class="p-5 bg-white rounded-md shadow-md">
+        <div><img src="images/others/latest2.png" alt=""></div>
+        <div>
+         <h3 class="latest-title">Ducati XDIAVEL S-73</h3>
+         <p class="latest-des">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Lacus, fermentum amet <br> faucibus sed id nisi lectus at.</p>
+         <button  class="rounded-md border-2 border-primary  py-4 text-primary hover:text-white   w-40 h-16 bg-white hover:bg-primary ">Read More</button>
+        </div>
+      </div>
+      <!-- third card -->
+      <div class="p-5 bg-white rounded-md shadow-md">
+        <div><img src="images/others/latest3.png" alt=""></div>
+        <div>
+         <h3 class="latest-title">Ducati XDIAVEL S-73</h3>
+         <p class="latest-des">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Lacus, fermentum amet <br> faucibus sed id nisi lectus at.</p>
+         <button class="rounded-md border-2 border-primary  py-4 text-primary hover:text-white   w-40 h-16 bg-white hover:bg-primary ">Read More</button>
+        </div>
+      </div>
+     </div>
+      
       <!-- happy client -->
-      <section></section>
+      <section>
+        <h2 class="capitalize text-[#000] text-5xl font-semibold flex justify-center mt-24 gap-2 ">
+          Happy <span class="text-primary">  clients says</span>
+        </h2>
+        <!-- card container -->
+        <div>
+          <div>
+            <img src="" alt="">
+            <p></p>
+          </div>
+        </div>
+      </section>
       <!-- FAQ -->
       <section></section>
     </main>
