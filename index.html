@@ -1,23 +1,84 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>biker zone</title>
     <!-- tailwind and daisyui integrated -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font family poppins added -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- tailwind customize classes -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              primary: "#E76F51",
+              
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .font-poppins {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="font-poppins">
     <!-- header -->
     <header>
-        <!-- nav section -->
-        <nav></nav>
-        <!-- banner section -->
+      <!-- nav section -->
+      <nav class="flex justify-around mt-12 items-center bg-white">
+        <div class="text-[#000] text-4xl font-bold">Bike Dekho</div>
+        <div>
+          <ul class="flex gap-9 items-center">
+            <li class="text-[#000] text-base font-medium">Home</li>
+            <li class="text-[#000] text-base font-medium">Shop</li>
+            <li class="text-[#000] text-base font-medium">News</li>
+            <li class="text-[#000] text-base font-medium">Contact</li>
+            <li>
+             <a href="#"> <button class="rounded-md bg-[#E76F51] px-12 py-4 text-white text-xl font-bold">Login</button></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- banner section -->
+      <section class=" ">
+        <div>
+          <h1>Ride-on R15 V4 <br>with Smile</h1>
+          <p>Amet minim mollit non deserunt ullamco <br>
+            est sit aliqua dolor do amet sint. Velit officia consequat <br> duis enim velit mollit.</p>
+          <button class="rounded-md bg-[#E76F51] px-12 py-4 text-white text-xl font-bold">Purchase</button>
+        </div>
+        <div></div>
+      </section>
     </header>
     <!-- main -->
-    <main></main>
+    <main>
+      <!-- featured bike section -->
+      <section></section>
+      <!-- latest news -->
+      <section></section>
+      <!-- happy client -->
+      <section></section>
+      <!-- FAQ -->
+      <section></section>
+    </main>
     <!-- footer -->
     <footer></footer>
-</body>
+  </body>
 </html>
