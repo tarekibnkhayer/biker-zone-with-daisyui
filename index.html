@@ -26,6 +26,8 @@
             colors: {
               clifford: "#da373d",
               primary: "#E76F51",
+              black: "#000",
+              para: "rgba(0, 0, 0, 0.80)"
               
             },
           },
@@ -42,10 +44,10 @@
     <!-- header -->
     <header>
       <!-- nav section -->
-      <nav class="flex justify-around mt-12 items-center bg-white">
-        <div class="text-[#000] text-4xl font-bold">Bike Dekho</div>
+      <nav class="flex flex-col justify-center items-center gap-7 md:flex-row md:justify-around mt-12 items-center bg-white">
+        <div class="text-[#000] text-4xl font-bold ">Bike Dekho</div>
         <div>
-          <ul class="flex gap-9 items-center">
+          <ul class="flex flex-col md:flex-row gap-9 items-center">
             <li class="text-[#000] text-base font-medium">Home</li>
             <li class="text-[#000] text-base font-medium">Shop</li>
             <li class="text-[#000] text-base font-medium">News</li>
@@ -57,20 +59,30 @@
         </div>
       </nav>
       <!-- banner section -->
-      <section class=" ">
-        <div>
-          <h1>Ride-on R15 V4 <br>with Smile</h1>
-          <p>Amet minim mollit non deserunt ullamco <br>
+      <section class="flex  flex-col md:justify-center items-center lg:flex-row lg:max-w-[1128px] bg-pink-50  lg:max-h-[550px] lg:m-[156px] mt-14 md:p-5 lg:p-24  gap-12">
+        <div class="ml-5">
+          <h1 class="black text-6xl font-bold leading-[75px]">Ride-on R15 V4 <br>with Smile</h1>
+          <p class="para text-base font-light leading-6 mt-5 mb-7">Amet minim mollit non deserunt ullamco <br>
             est sit aliqua dolor do amet sint. Velit officia consequat <br> duis enim velit mollit.</p>
           <button class="rounded-md bg-[#E76F51] px-12 py-4 text-white text-xl font-bold">Purchase</button>
         </div>
-        <div></div>
+        <div class="w-[406px] h-[343px]">
+          <img src="images/slider/bike1.png" alt="" class="w-full ">
+        </div>
       </section>
     </header>
     <!-- main -->
     <main>
       <!-- featured bike section -->
-      <section></section>
+      <section class="mt-48">
+       <div class="flex flex-col justify-center items-center gap-4"> <h2 class="capitalize text-[#000] text-5xl font-semibold">featured bike in this year</h2>
+        <p class="text-primary text-sm font-semibold mb-12">Best bike collection</p></div>
+        <div class="flex flex-col lg:flex-row justify-center items-center gap-36">
+      <div class="w-[288px] h-[243px]"><img src="images/slider/bike3.png" alt=""class="w-full"></div>
+      <div class="w-[288px] h-[243px]"><img src="images/others/feature-bike.png" alt=""class="w-full"></div>
+       <div class="w-[288px] h-[243px]"><img src="images/slider/bike3.png" alt=""class="w-full"></div>
+        </div>
+      </section>
       <!-- latest news -->
       <section></section>
       <!-- happy client -->
